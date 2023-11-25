@@ -76,14 +76,22 @@ http://localhost:1338
 Before you start, make sure you have installed [Docker](https://www.docker.com/get-started) on your machine.
 
 ### Running the Docker
-Pull the Docker image from Docker Hub:
+Clone the GitHub repository:
 ```
-docker pull ramonvc/freegpt-webui
+git clone https://github.com/Rozareoagro14/freegpt-webui.git
+```
+Navigate to the project directory:
+```
+cd freegpt-webui
+```
+4. Build the Docker image:
+```shell
+docker build -t freegpt-webui .
 ```
 
 Run the application using Docker:
 ```
-docker run -p 1338:1338 ramonvc/freegpt-webui
+docker run -p 1338:1338 freegpt-webui
 ```
 
 Access the application in your browser using the URL:
